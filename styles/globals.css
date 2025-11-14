@@ -3,7 +3,25 @@
 @tailwind utilities;
 
 /* Stili globali */
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* blocca lo scroll orizzontale */
   font-family: system-ui, sans-serif;
   background-color: #f9fafb;
+}
+
+/* Reset link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Immagini sempre responsive */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
