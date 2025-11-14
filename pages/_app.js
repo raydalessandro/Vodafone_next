@@ -4,11 +4,13 @@ import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div className="max-w-full overflow-x-hidden">
       <Navbar />
-      <Component {...pageProps} />
+      <main className="min-h-screen">
+        <Component {...pageProps} />
+      </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
